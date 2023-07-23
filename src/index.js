@@ -3,11 +3,21 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Insert from './components/Insert';
+import Getall from './components/Getall';
+import Delete from './components/Delete';
+import Getbyid from './components/Getbyid';
+import Update from './components/Update';
+import Dashboard from './components/Dashboard';
+import { BrowserRouter } from 'react-router-dom';
 
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Dashboard />
+    </BrowserRouter>
   </React.StrictMode>
 );
 
